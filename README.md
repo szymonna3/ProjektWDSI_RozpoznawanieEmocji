@@ -34,13 +34,13 @@ Projekt został zaimplementowany w środowisku **Python 3.13** z użyciem biblio
 
 ### 📦 Instalacja bibliotek
 
-`pip install -r requirements.txt`
+`pip install -r wymagania.txt`
 
 ### 🏋️Trening modelu (opcjonalnie)
 
 W celu wytrenowania modelu od podstaw należy uruchomić:
 
-`python train.py`
+`python trening.py`
 
 Skrypt automatycznie pobierze zbiór danych FER-2013 oraz przeprowadzi proces uczenia. Po zakończeniu treningu w katalogu projektu zostanie utworzony plik z zapisanym modelem:
 
@@ -56,13 +56,13 @@ Aby przeprowadzić predykcję na wybranym obrazie:
 
 3. Uruchom program:
 
-`python predict.py`
+`python predykcja.py`
 
 ## 📂 Struktura projektu
 
-`train.py` – pobieranie danych, preprocessing, definicja architektury CNN, trening
+`trening.py` – pobieranie danych, preprocessing, definicja architektury CNN, trening
 
-`predict.py` – wczytanie modelu i predykcja emocji na obrazach
+`predykcja.py` – wczytanie modelu i predykcja emocji na obrazach
 
 `moj_model_emocji.h5` – zapisany model sieci neuronowej
 
@@ -74,6 +74,7 @@ Aby przeprowadzić predykcję na wybranym obrazie:
 * Szymon Nawracała
 
 * Mikołaj Ziółek
+
 
 
 
