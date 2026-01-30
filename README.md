@@ -1,66 +1,78 @@
 # System Rozpoznawania Emocji Twarzy
 
-Projekt zaliczeniowy zrealizowany w ramach przedmiotu **WDSI**. Celem projektu było opracowanie oraz implementacja systemu umożliwiającego automatyczne rozpoznawanie emocji na podstawie obrazu twarzy z wykorzystaniem **Konwolucyjnej Sieci Neuronowej (Convolutional Neural Network – CNN)**.
+Projekt zaliczeniowy zrealizowany w ramach przedmiotu **WDSI**. Celem projektu było opracowanie oraz implementacja systemu umożliwiającego automatyczne rozpoznawanie emocji na podstawie obrazu twarzy.
 
-Model został wytrenowany na zbiorze danych **FER-2013** i służy do klasyfikacji emocji na podstawie pojedynczych zdjęć. Działanie systemu obejmuje dwa etapy: detekcję twarzy w obrazie oraz analizę wyodrębnionego obszaru twarzy przez wytrenowaną sieć neuronową.
+Model został wytrenowany na zbiorze danych **FER-2013** i służy do klasyfikacji emocji na podstawie pojedynczych zdjęć. Działanie systemu obejmuje dwa etapy: 
+1. 📸 **Detekcję twarzy** w obrazie.
+2. 🤖 **Analizę obszaru twarzy** przez wytrenowaną sieć neuronową.
 
 System rozpoznaje następujące klasy emocji:
-- Złość
-- Odraza
-- Strach
-- Radość
-- Smutek
-- Zaskoczenie
-- Neutralny
+System klasyfikuje twarz do jednej z 7 kategorii:
+* 😠 **Złość**
+* 🤢 **Odraza**
+* 😨 **Strach**
+* 😄 **Radość**
+* 😢 **Smutek**
+* 😲 **Zaskoczenie**
+* 😐 **Neutralny**
 
-Wynik predykcji prezentowany jest w postaci nazwy emocji oraz wartości procentowej, określającej poziom pewności klasyfikacji. Wartość ta (Confidence Score) pochodzi z warstwy wyjściowej sieci neuronowej z funkcją aktywacji **Softmax**, która zwraca rozkład prawdopodobieństwa dla wszystkich 7 klas. Wysokie wartości (np. >90%) wskazują na dużą pewność predykcji, natomiast niższe mogą wynikać z niejednoznacznego wyrazu twarzy lub ograniczonej jakości obrazu wejściowego.
+### 🎯 Interpretacja Wyników
+Wynik predykcji prezentowany jest w postaci nazwy emocji oraz **wartości procentowej** (Confidence Score).
+* Wartość ta pochodzi z funkcji aktywacji **Softmax** 📉.
+* **Wysokie wyniki (>90%)** ✅ oznaczają dużą pewność modelu.
+* **Niższe wyniki** ⚠️ mogą wynikać z niejednoznacznej mimiki lub słabej jakości zdjęcia.
 
-## Wykorzystane technologie
+## 🛠️ Wykorzystane Technologie
+Projekt został zaimplementowany w środowisku **Python 3.13** z użyciem bibliotek:
 
-Projekt został zaimplementowany w środowisku **Python 3.13** z użyciem następujących bibliotek:
-- **TensorFlow / Keras** – budowa oraz trening modelu CNN
-- **OpenCV (cv2)** – przetwarzanie obrazu i detekcja twarzy (Haar Cascade)
-- **NumPy** – operacje numeryczne i macierzowe
-- **Kagglehub** – automatyczne pobieranie zbioru danych
+* **TensorFlow / Keras** – budowa oraz trening modelu CNN.
+* **OpenCV (cv2)** – przetwarzanie obrazu i detekcja twarzy (Haar Cascade).
+* **NumPy** – operacje numeryczne i macierzowe.
+* **Kagglehub** – automatyczne pobieranie zbioru danych.
 
-## Instrukcja uruchomienia
+## 🚀 Instrukcja uruchomienia
 
-### Instalacja zależności
+### 📦 Instalacja zależności
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
-### Trening modelu (opcjonalnie)
+### 🏋️Trening modelu (opcjonalnie)
 
 W celu wytrenowania modelu od podstaw należy uruchomić:
 
-python train.py
+`python train.py`
 
 Skrypt automatycznie pobierze zbiór danych FER-2013 oraz przeprowadzi proces uczenia. Po zakończeniu treningu w katalogu projektu zostanie utworzony plik z zapisanym modelem:
 
-moj_model_emocji.h5
+`moj_model_emocji.h5`
 
-### Predykcja (testowanie modelu)
+### 🔮 Predykcja (testowanie modelu)
 
 Aby przeprowadzić predykcję na wybranym obrazie:
 1. Umieść plik `.jpg` lub `.png` w katalogu projektu.
 2. Otwórz plik `predict.py` i ustaw nazwę pliku w zmiennej:
 
-SCIEZKA_DO_ZDJECIA = "nazwa_pliku.jpg"
+`SCIEZKA_DO_ZDJECIA = "nazwa_pliku.jpg"`
 
 3. Uruchom program:
 
-python predict.py
+`python predict.py`
 
-## Struktura projektu
+## 📂 Struktura projektu
 
-train.py – pobieranie danych, preprocessing, definicja architektury CNN, trening
-predict.py – wczytanie modelu i predykcja emocji na obrazach
-moj_model_emocji.h5 – zapisany model sieci neuronowej
-dataset/ – zbiór danych treningowych i testowych (tworzony automatycznie)
+`train.py` – pobieranie danych, preprocessing, definicja architektury CNN, trening
 
-## Autorzy
+`predict.py` – wczytanie modelu i predykcja emocji na obrazach
 
-Szymon Nawracała
+`moj_model_emocji.h5` – zapisany model sieci neuronowej
 
-Mikołaj Ziółek
+`dataset/` – zbiór danych treningowych i testowych (tworzony automatycznie)
+
+
+## 👥 Autorzy
+
+* Szymon Nawracała
+
+* Mikołaj Ziółek
+
 
