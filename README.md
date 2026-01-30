@@ -1,6 +1,6 @@
 # System Rozpoznawania Emocji Twarzy z wykorzystaniem CNN
 
-Projekt zaliczeniowy zrealizowany w ramach przedmiotu **Sztuczna Inteligencja**. Celem projektu było opracowanie oraz implementacja systemu umożliwiającego automatyczne rozpoznawanie emocji na podstawie obrazu twarzy z wykorzystaniem **Konwolucyjnej Sieci Neuronowej (Convolutional Neural Network – CNN)**.
+Projekt zaliczeniowy zrealizowany w ramach przedmiotu **WDSI**. Celem projektu było opracowanie oraz implementacja systemu umożliwiającego automatyczne rozpoznawanie emocji na podstawie obrazu twarzy z wykorzystaniem **Konwolucyjnej Sieci Neuronowej (Convolutional Neural Network – CNN)**.
 
 Model został wytrenowany na zbiorze danych **FER-2013** i służy do klasyfikacji emocji na podstawie pojedynczych zdjęć. Działanie systemu obejmuje dwa etapy: detekcję twarzy w obrazie oraz analizę wyodrębnionego obszaru twarzy przez wytrenowaną sieć neuronową.
 
@@ -61,4 +61,5 @@ dataset/ – zbiór danych treningowych i testowych (tworzony automatycznie)
 ## Autorzy
 
 Szymon Nawracała
+
 Mikołaj Ziółek
