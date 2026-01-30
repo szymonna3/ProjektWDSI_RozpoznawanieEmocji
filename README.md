@@ -50,7 +50,7 @@ Skrypt automatycznie pobierze zbiór danych FER-2013 oraz przeprowadzi proces uc
 
 Aby przeprowadzić predykcję na wybranym obrazie:
 1. Umieść plik `.jpg` lub `.png` w katalogu projektu.
-2. Otwórz plik `predict.py` i ustaw nazwę pliku w zmiennej:
+2. Otwórz plik `predykcja.py` i ustaw nazwę pliku w zmiennej:
 
 `SCIEZKA_DO_ZDJECIA = "nazwa_pliku.jpg"`
 
@@ -74,6 +74,7 @@ Aby przeprowadzić predykcję na wybranym obrazie:
 * Szymon Nawracała
 
 * Mikołaj Ziółek
+
 
 
 
