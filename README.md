@@ -32,7 +32,7 @@ Projekt został zaimplementowany w środowisku **Python 3.13** z użyciem biblio
 
 ## 🚀 Instrukcja uruchomienia
 
-### 📦 Instalacja zależności
+### 📦 Instalacja bibliotek
 
 `pip install -r requirements.txt`
 
@@ -74,5 +74,6 @@ Aby przeprowadzić predykcję na wybranym obrazie:
 * Szymon Nawracała
 
 * Mikołaj Ziółek
+
 
 
