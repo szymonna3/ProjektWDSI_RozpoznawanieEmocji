@@ -34,7 +34,7 @@ Projekt został zaimplementowany w środowisku **Python 3.13** z użyciem biblio
 
 ### 📦 Instalacja bibliotek
 
-`pip install -r wymagania.txt`
+`pip install -r requirements.txt`
 
 ### 🏋️Trening modelu (opcjonalnie)
 
@@ -74,6 +74,7 @@ Aby przeprowadzić predykcję na wybranym obrazie:
 * Szymon Nawracała
 
 * Mikołaj Ziółek
+
 
 
 
