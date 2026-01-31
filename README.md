@@ -6,7 +6,6 @@ Model został wytrenowany na zbiorze danych **FER-2013** i służy do klasyfikac
 1. 📸 **Detekcję twarzy** w obrazie.
 2. 🤖 **Analizę obszaru twarzy** przez wytrenowaną sieć neuronową.
 
-System rozpoznaje następujące klasy emocji:
 System klasyfikuje twarz do jednej z 7 kategorii:
 * 😠 **Złość**
 * 🤢 **Odraza**
@@ -74,6 +73,7 @@ Aby przeprowadzić predykcję na wybranym obrazie:
 * Szymon Nawracała
 
 * Mikołaj Ziółek
+
 
 
 
